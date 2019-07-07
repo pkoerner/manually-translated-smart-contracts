@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1560266040878" org.eventb.texttools.text_representation="context futureContractCtx&#10;&#10;&#10;sets&#10;goods&#10;&#10;constants&#10;money&#10;porkbellys&#10;&#10;axioms&#10;@axim1 partition(goods, {money}, {porkbellys})&#10;&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_irloMIxbEemMrvaUgNKbYw" org.eventb.core.generated="false" org.eventb.core.identifier="goods"/>
+<org.eventb.core.constant name="_irloMYxbEemMrvaUgNKbYw" org.eventb.core.generated="false" org.eventb.core.identifier="money"/>
+<org.eventb.core.constant name="_irloMoxbEemMrvaUgNKbYw" org.eventb.core.generated="false" org.eventb.core.identifier="porkbellys"/>
+<org.eventb.core.axiom name="_irmPQIxbEemMrvaUgNKbYw" org.eventb.core.generated="false" org.eventb.core.label="axim1" org.eventb.core.predicate="partition(goods, {money}, {porkbellys})"/>
+</org.eventb.core.contextFile>

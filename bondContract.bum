@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1560182843899" org.eventb.texttools.text_representation="machine bondContract sees bondContractCtx&#10;&#10;variables&#10;currentMonth&#10;rateSchedule&#10;bankAccount&#10;&#10;invariants&#10;@inv1.3 currentMonth ∈ 0‥time + 2 // 25 Monate Laufzeit&#10;@inv1.6 rateSchedule ∈ 0‥time → ℕ&#10;@inv1.7 bankAccount ∈ ℕ&#10;@inv1.10 currentMonth = 0 ⇒  bankAccount = 0&#10;@inv1.11 currentMonth ≠ 0 ∧ currentMonth &lt; 24 ⇒ bankAccount = currentMonth ∗ rate&#10;@inv1.12 currentMonth = 25 ⇒  bankAccount = (currentMonth − 1) ∗ rate + 1000&#10;&#10;events&#10;  event INITIALISATION&#10;  then&#10;  @act1.3 currentMonth ≔ 0&#10;  @act1.5 rateSchedule ≔  λc · c ∈ 0‥time ∣ 0&#10;  @act1.6 bankAccount ≔  0&#10;  end&#10;&#10;  event progressMonth&#10;  when&#10;  @inv1.1 currentMonth &lt; time + 1&#10;  @inv1.2 rateSchedule(currentMonth) = 0&#10;  then&#10;  @act1.1 currentMonth ≔ currentMonth + 1&#10;  @act1.2 rateSchedule(currentMonth) ≔ rate&#10;  @act1.3 bankAccount ≔  bankAccount + rate&#10;  end&#10;&#10;&#10;  event lastPayment&#10;  when&#10;  @inv1.1 currentMonth = 24&#10;  then&#10;  @act1.1 bankAccount ≔ bankAccount + 1000&#10;  @act1.2 currentMonth ≔ currentMonth + 1&#10;  end&#10;&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_1AU14IrREemy3OHUlANEBw" org.eventb.core.target="bondContractCtx"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_CbULYYuCEemnhtSGBral9w" org.eventb.core.assignment="currentMonth ≔ 0" org.eventb.core.generated="false" org.eventb.core.label="act1,3"/>
+<org.eventb.core.action name="_M3icMIuOEemXDtEIgydsYA" org.eventb.core.assignment="rateSchedule ≔  λc · c ∈ 0‥time ∣ 0" org.eventb.core.generated="false" org.eventb.core.label="act1,5"/>
+<org.eventb.core.action name="_Y9WBUIuXEemXDtEIgydsYA" org.eventb.core.assignment="bankAccount ≔  0" org.eventb.core.generated="false" org.eventb.core.label="act1,6"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_kNJ88It8EemnhtSGBral9w" org.eventb.core.generated="false" org.eventb.core.identifier="currentMonth"/>
+<org.eventb.core.variable name="_kNJ88Yt8EemnhtSGBral9w" org.eventb.core.generated="false" org.eventb.core.identifier="rateSchedule"/>
+<org.eventb.core.invariant name="_kNJ88ot8EemnhtSGBral9w" org.eventb.core.comment="25 Monate Laufzeit" org.eventb.core.generated="false" org.eventb.core.label="inv1,3" org.eventb.core.predicate="currentMonth ∈ 0‥time + 2"/>
+<org.eventb.core.event name="_kGqzEIt_EemnhtSGBral9w" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="progressMonth">
+<org.eventb.core.guard name="_kGraIIt_EemnhtSGBral9w" org.eventb.core.generated="false" org.eventb.core.label="inv1,1" org.eventb.core.predicate="currentMonth &lt; time + 1"/>
+<org.eventb.core.action name="_kGraIot_EemnhtSGBral9w" org.eventb.core.assignment="currentMonth ≔ currentMonth + 1" org.eventb.core.generated="false" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_CbULYIuCEemnhtSGBral9w" org.eventb.core.assignment="rateSchedule(currentMonth) ≔ rate" org.eventb.core.generated="false" org.eventb.core.label="act1,2"/>
+<org.eventb.core.action name="_XEjBwIuZEemXDtEIgydsYA" org.eventb.core.assignment="bankAccount ≔  bankAccount + rate" org.eventb.core.generated="false" org.eventb.core.label="act1,3"/>
+<org.eventb.core.guard name="_Xz9FcIuZEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.label="inv1,2" org.eventb.core.predicate="rateSchedule(currentMonth) = 0"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="_CbUydYuCEemnhtSGBral9w" org.eventb.core.generated="false" org.eventb.core.label="inv1,6" org.eventb.core.predicate="rateSchedule ∈ 0‥time → ℕ"/>
+<org.eventb.core.event name="_ROL9QIuXEemXDtEIgydsYA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="lastPayment">
+<org.eventb.core.guard name="_kGsBMIt_EemnhtSGBral9w" org.eventb.core.generated="false" org.eventb.core.label="inv1,1" org.eventb.core.predicate="currentMonth = 24"/>
+<org.eventb.core.action name="_kGsBMYt_EemnhtSGBral9w" org.eventb.core.assignment="bankAccount ≔ bankAccount + 1000" org.eventb.core.generated="false" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_p1D6cIuZEemXDtEIgydsYA" org.eventb.core.assignment="currentMonth ≔ currentMonth + 1" org.eventb.core.generated="false" org.eventb.core.label="act1,2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_W1RhkIuXEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.identifier="bankAccount"/>
+<org.eventb.core.invariant name="_W1RhkYuXEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.label="inv1,7" org.eventb.core.predicate="bankAccount ∈ ℕ"/>
+<org.eventb.core.invariant name="_r7nCIIuXEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.label="inv1,10" org.eventb.core.predicate="currentMonth = 0 ⇒  bankAccount = 0"/>
+<org.eventb.core.invariant name="_MCLV8IuYEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.label="inv1,11" org.eventb.core.predicate="currentMonth ≠ 0 ∧ currentMonth &lt; 24 ⇒ bankAccount = currentMonth ∗ rate"/>
+<org.eventb.core.invariant name="_MCLV8YuYEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.label="inv1,12" org.eventb.core.predicate="currentMonth = 25 ⇒  bankAccount = (currentMonth − 1) ∗ rate + 1000"/>
+</org.eventb.core.machineFile>

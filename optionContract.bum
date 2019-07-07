@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1560185610915" org.eventb.texttools.text_representation="machine optionContract sees optionContractCtx&#10;&#10;variables&#10;rightA&#10;rightB&#10;day&#10;bought&#10;&#10;invariants&#10;@inv1.1 rightA ∈ goods&#10;@inv1.2 rightB ∈ goods&#10;@inv1.3 rightA ≠ rightB&#10;@inv1.4 bought ∈ BOOL&#10;@inv1.5 day ∈ ℕ&#10;&#10;events&#10;  event INITIALISATION&#10;  then&#10;  @init1.1 rightA ≔ money&#10;  @init1.2 rightB ≔ XYZCorp&#10;  @init1.3 day ≔ 149&#10;  @init1.4 bought ≔ FALSE&#10;  end&#10;&#10;  event progressUntilTradingPeriod&#10;  when&#10;  @inv1.1 day &lt; 151&#10;  then&#10;  @act1.1 day ≔ day + 1&#10;  end&#10;&#10;  event progressThrowTradingPeriod&#10;  when&#10;  @inv1.1 151 ≤ day ∧ day ≤ 182&#10;  then&#10;  @act1.1 day ≔ day + 1&#10;  end&#10;&#10;&#10;  event trade&#10;  where&#10;  @inv1.1 day ≥ 151 ∧ day ≤ 182&#10;  @inv1.2 rightA = money&#10;  @inv1.3 rightB = XYZCorp&#10;  @inv1.4 bought = FALSE&#10;  then&#10;  @act1.1 rightA ≔ rightB&#10;  @act1.2 rightB ≔ rightA&#10;  @act1.3 bought ≔ TRUE&#10;  end&#10; end&#10;" version="5">
+<org.eventb.core.seesContext name="__MjWwIp4EemDqpB_FbVHzA" org.eventb.core.target="optionContractCtx"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_rCX70IrNEemCXOd6HKnK0A" org.eventb.core.assignment="rightA ≔ money" org.eventb.core.generated="false" org.eventb.core.label="init1,1"/>
+<org.eventb.core.action name="_rCX70YrNEemCXOd6HKnK0A" org.eventb.core.assignment="rightB ≔ XYZCorp" org.eventb.core.generated="false" org.eventb.core.label="init1,2"/>
+<org.eventb.core.action name="_rCX70orNEemCXOd6HKnK0A" org.eventb.core.assignment="day ≔ 149" org.eventb.core.generated="false" org.eventb.core.label="init1,3"/>
+<org.eventb.core.action name="_rCX704rNEemCXOd6HKnK0A" org.eventb.core.assignment="bought ≔ FALSE" org.eventb.core.generated="false" org.eventb.core.label="init1,4"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_rCYi4IrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.identifier="rightA"/>
+<org.eventb.core.variable name="_rCYi4YrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.identifier="rightB"/>
+<org.eventb.core.variable name="_rCYi4orNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.identifier="day"/>
+<org.eventb.core.variable name="_rCYi44rNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.identifier="bought"/>
+<org.eventb.core.invariant name="_rCYi5IrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,1" org.eventb.core.predicate="rightA ∈ goods"/>
+<org.eventb.core.invariant name="_rCYi5YrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,2" org.eventb.core.predicate="rightB ∈ goods"/>
+<org.eventb.core.invariant name="_rCYi5orNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,3" org.eventb.core.predicate="rightA ≠ rightB"/>
+<org.eventb.core.invariant name="_rCZJ8IrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,4" org.eventb.core.predicate="bought ∈ BOOL"/>
+<org.eventb.core.invariant name="_rCZJ8YrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,5" org.eventb.core.predicate="day ∈ ℕ"/>
+<org.eventb.core.event name="_u52HMIrOEemzKuLbuCo4Eg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="progressUntilTradingPeriod">
+<org.eventb.core.guard name="_rCZJ84rNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,1" org.eventb.core.predicate="day &lt; 151"/>
+<org.eventb.core.action name="_rCZxAorNEemCXOd6HKnK0A" org.eventb.core.assignment="day ≔ day + 1" org.eventb.core.generated="false" org.eventb.core.label="act1,1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_zqMGMIrNEemCXOd6HKnK0A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="progressThrowTradingPeriod">
+<org.eventb.core.guard name="_rCZxAIrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,1" org.eventb.core.predicate="151 ≤ day ∧ day ≤ 182"/>
+<org.eventb.core.action name="_rCaYEYrNEemCXOd6HKnK0A" org.eventb.core.assignment="day ≔ day + 1" org.eventb.core.generated="false" org.eventb.core.label="act1,1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_rCZxA4rNEemCXOd6HKnK0A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="trade">
+<org.eventb.core.guard name="_u538YIrOEemzKuLbuCo4Eg" org.eventb.core.generated="false" org.eventb.core.label="inv1,1" org.eventb.core.predicate="day ≥ 151 ∧ day ≤ 182"/>
+<org.eventb.core.guard name="_rCZxAYrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,2" org.eventb.core.predicate="rightA = money"/>
+<org.eventb.core.guard name="_rCZxBorNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,3" org.eventb.core.predicate="rightB = XYZCorp"/>
+<org.eventb.core.guard name="_rCaYEIrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="inv1,4" org.eventb.core.predicate="bought = FALSE"/>
+<org.eventb.core.action name="_u55KgIrOEemzKuLbuCo4Eg" org.eventb.core.assignment="rightA ≔ rightB" org.eventb.core.generated="false" org.eventb.core.label="act1,1"/>
+<org.eventb.core.action name="_rCaYEorNEemCXOd6HKnK0A" org.eventb.core.assignment="rightB ≔ rightA" org.eventb.core.generated="false" org.eventb.core.label="act1,2"/>
+<org.eventb.core.action name="_rCaYE4rNEemCXOd6HKnK0A" org.eventb.core.assignment="bought ≔ TRUE" org.eventb.core.generated="false" org.eventb.core.label="act1,3"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

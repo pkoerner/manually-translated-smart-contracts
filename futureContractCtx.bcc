@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axim1" org.eventb.core.predicate="partition(goods,{money},{porkbellys})" org.eventb.core.source="/smart-contracts/futureContractCtx.buc|org.eventb.core.contextFile#futureContractCtx|org.eventb.core.axiom#_irmPQIxbEemMrvaUgNKbYw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="goods" org.eventb.core.source="/smart-contracts/futureContractCtx.buc|org.eventb.core.contextFile#futureContractCtx|org.eventb.core.carrierSet#_irloMIxbEemMrvaUgNKbYw" org.eventb.core.type="ℙ(goods)"/>
+<org.eventb.core.scConstant name="money" org.eventb.core.source="/smart-contracts/futureContractCtx.buc|org.eventb.core.contextFile#futureContractCtx|org.eventb.core.constant#_irloMYxbEemMrvaUgNKbYw" org.eventb.core.type="goods"/>
+<org.eventb.core.scConstant name="porkbellys" org.eventb.core.source="/smart-contracts/futureContractCtx.buc|org.eventb.core.contextFile#futureContractCtx|org.eventb.core.constant#_irloMoxbEemMrvaUgNKbYw" org.eventb.core.type="goods"/>
+</org.eventb.core.scContextFile>

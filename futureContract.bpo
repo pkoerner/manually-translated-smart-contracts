@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="goods" org.eventb.core.type="ℙ(goods)"/>
+<org.eventb.core.poIdentifier name="money" org.eventb.core.type="goods"/>
+<org.eventb.core.poIdentifier name="porkbellys" org.eventb.core.type="goods"/>
+<org.eventb.core.poPredicate name="porkbellyt" org.eventb.core.predicate="partition(goods,{money},{porkbellys})" org.eventb.core.source="/smart-contracts/futureContractCtx.buc|org.eventb.core.contextFile#futureContractCtx|org.eventb.core.axiom#_irmPQIxbEemMrvaUgNKbYw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="bought" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="day" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="rightA" org.eventb.core.type="goods"/>
+<org.eventb.core.poIdentifier name="rightB" org.eventb.core.type="goods"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#EVTALLHYPfutureContractCt~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="money≠porkbellys" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyEYxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyEYxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poSequent#INITIALISATION\/inv1,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#EVTALLHYPfutureContractCt~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="149∈ℕ" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyE4xbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyE4xbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poSequent#INITIALISATION\/inv1,5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTfutureContractCt~" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="rightA'" org.eventb.core.type="goods"/>
+<org.eventb.core.poIdentifier name="bought'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="rightB'" org.eventb.core.type="goods"/>
+<org.eventb.core.poIdentifier name="day'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPfutureContractCt~" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#EVTIDENTfutureContractCt~" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="progressToTradingPEriod/inv1,5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#EVTALLHYPfutureContractCu'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="day+1∈ℕ" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyE4xbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLUZIIxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyE4xbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poSequent#progressToTradingPEriod\/inv1,5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTfutureContractCu'" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="day'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPfutureContractCu'" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#EVTIDENTfutureContractCu'" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="day&lt;151" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLUZIIxbEemMrvaUgNKbYw|org.eventb.core.guard#_cLUZIYxbEemMrvaUgNKbYw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="progressOneDayInContract/inv1,5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#EVTALLHYPfutureContractCu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="day+1∈ℕ" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyE4xbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLUZI4xbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyE4xbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poSequent#progressOneDayInContract\/inv1,5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTfutureContractCu(" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="day'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPfutureContractCu(" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#EVTIDENTfutureContractCu(" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="151≤day∧day&lt;182" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLUZI4xbEemMrvaUgNKbYw|org.eventb.core.guard#_cLVAMIxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="bought=FALSE" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLUZI4xbEemMrvaUgNKbYw|org.eventb.core.guard#_cLVAMYxbEemMrvaUgNKbYw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="trade/inv1,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#EVTALLHYPfutureContractCu)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="rightB≠rightA" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyEYxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLVnQIxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyEYxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poSequent#trade\/inv1,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTfutureContractCu)" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="rightA'" org.eventb.core.type="goods"/>
+<org.eventb.core.poIdentifier name="bought'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="rightB'" org.eventb.core.type="goods"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPfutureContractCu)" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#EVTIDENTfutureContractCu)" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="day≥151∧day≤182" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLVnQIxbEemMrvaUgNKbYw|org.eventb.core.guard#_cLVnQYxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="rightA=money" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLVnQIxbEemMrvaUgNKbYw|org.eventb.core.guard#_cLVnQoxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="rightB=porkbellys" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLVnQIxbEemMrvaUgNKbYw|org.eventb.core.guard#_cLVnQ4xbEemMrvaUgNKbYw"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="bought=FALSE" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.event#_cLVnQIxbEemMrvaUgNKbYw|org.eventb.core.guard#_cLWOUIxbEemMrvaUgNKbYw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/smart-contracts/futureContract.bpo|org.eventb.core.poFile#futureContract|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="rightA∈goods" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTLA4xbEemMrvaUgNKbYw"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="rightB∈goods" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyEIxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="rightA≠rightB" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyEYxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="bought∈BOOL" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyEoxbEemMrvaUgNKbYw"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="day∈ℕ" org.eventb.core.source="/smart-contracts/futureContract.bum|org.eventb.core.machineFile#futureContract|org.eventb.core.invariant#_cLTyE4xbEemMrvaUgNKbYw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

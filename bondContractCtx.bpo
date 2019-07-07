@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="rate" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="time" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/smart-contracts/bondContractCtx.bpo|org.eventb.core.poFile#bondContractCtx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="time=23" org.eventb.core.source="/smart-contracts/bondContractCtx.buc|org.eventb.core.contextFile#bondContractCtx|org.eventb.core.axiom#_ki4roYuYEemXDtEIgydsYA"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="rate=500" org.eventb.core.source="/smart-contracts/bondContractCtx.buc|org.eventb.core.contextFile#bondContractCtx|org.eventb.core.axiom#_spe_UIuYEemXDtEIgydsYA"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

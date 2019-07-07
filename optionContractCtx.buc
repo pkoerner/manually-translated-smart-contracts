@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1560095002553" org.eventb.texttools.text_representation="context optionContractCtx&#10;&#10;sets&#10;goods&#10;&#10;constants&#10;money&#10;XYZCorp&#10;&#10;axioms&#10;@axim1 partition(goods, {money}, {XYZCorp})&#10;&#10;&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_PZq6cIrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.identifier="goods"/>
+<org.eventb.core.constant name="_PZrhgIrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.identifier="money"/>
+<org.eventb.core.axiom name="_PZsIkIrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.label="axim1" org.eventb.core.predicate="partition(goods, {money}, {XYZCorp})"/>
+<org.eventb.core.constant name="_T_FmYIrNEemCXOd6HKnK0A" org.eventb.core.generated="false" org.eventb.core.identifier="XYZCorp"/>
+</org.eventb.core.contextFile>

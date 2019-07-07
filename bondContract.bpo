@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="50">
+<org.eventb.core.poIdentifier name="rate" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="time" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="timf" org.eventb.core.predicate="time=23" org.eventb.core.source="/smart-contracts/bondContractCtx.buc|org.eventb.core.contextFile#bondContractCtx|org.eventb.core.axiom#_ki4roYuYEemXDtEIgydsYA"/>
+<org.eventb.core.poPredicate name="timg" org.eventb.core.predicate="rate=500" org.eventb.core.source="/smart-contracts/bondContractCtx.buc|org.eventb.core.contextFile#bondContractCtx|org.eventb.core.axiom#_spe_UIuYEemXDtEIgydsYA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="50">
+<org.eventb.core.poIdentifier name="bankAccount" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="currentMonth" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="rateSchedule" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="55">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ time+2" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_kNJ88ot8EemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_kNJ88ot8EemnhtSGBral9w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#INITIALISATION\/inv1,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="53">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(λc⦂ℤ·c∈0 ‥ time ∣ 0)∈0 ‥ time → ℕ" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_CbUydYuCEemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_CbUydYuCEemnhtSGBral9w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#INITIALISATION\/inv1,6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_W1RhkYuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_W1RhkYuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#INITIALISATION\/inv1,7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="51">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=0⇒0=0" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_r7nCIIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_r7nCIIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#INITIALISATION\/inv1,10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="52">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≠0∧0&lt;24⇒0=0∗rate" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8IuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8IuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#INITIALISATION\/inv1,11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1,12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=25⇒0=(0 − 1)∗rate+1000" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8YuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8YuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#INITIALISATION\/inv1,12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTbondContractCu'" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="rateSchedule'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="currentMonth'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="bankAccount'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPbondContractCu'" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTIDENTbondContractCu'" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="progressMonth/inv1,2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTHYPbondContractCu('"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="currentMonth∈dom(rateSchedule)∧rateSchedule∈ℤ ⇸ ℤ" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w|org.eventb.core.guard#_Xz9FcIuZEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w|org.eventb.core.guard#_Xz9FcIuZEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTHYPbondContractCu('"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="progressMonth/inv1,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="currentMonth+1∈0 ‥ time+2" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_kNJ88ot8EemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_kNJ88ot8EemnhtSGBral9w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#progressMonth\/inv1,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="progressMonth/inv1,6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="rateSchedule{currentMonth ↦ rate}∈0 ‥ time → ℕ" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_CbUydYuCEemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_CbUydYuCEemnhtSGBral9w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#progressMonth\/inv1,6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="progressMonth/inv1,7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="bankAccount+rate∈ℕ" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_W1RhkYuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_W1RhkYuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#progressMonth\/inv1,7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="progressMonth/inv1,10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="currentMonth+1=0⇒bankAccount+rate=0" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_r7nCIIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_r7nCIIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#progressMonth\/inv1,10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="progressMonth/inv1,11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="currentMonth+1≠0∧currentMonth+1&lt;24⇒bankAccount+rate=(currentMonth+1)∗rate" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8IuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8IuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#progressMonth\/inv1,11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="progressMonth/inv1,12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="currentMonth+1=25⇒bankAccount+rate=(currentMonth+1 − 1)∗rate+1000" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8YuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8YuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#progressMonth\/inv1,12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTbondContractCu(" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="60">
+<org.eventb.core.poIdentifier name="rateSchedule'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="currentMonth'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="bankAccount'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPbondContractCu('" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTIDENTbondContractCu(" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="currentMonth&lt;time+1" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w|org.eventb.core.guard#_kGraIIt_EemnhtSGBral9w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPbondContractCu(" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTHYPbondContractCu('" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="rateSchedule(currentMonth)=0" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_kGqzEIt_EemnhtSGBral9w|org.eventb.core.guard#_Xz9FcIuZEemXDtEIgydsYA"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="lastPayment/inv1,3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="currentMonth+1∈0 ‥ time+2" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_kNJ88ot8EemnhtSGBral9w"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_ROL9QIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_kNJ88ot8EemnhtSGBral9w"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#lastPayment\/inv1,3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="lastPayment/inv1,7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="bankAccount+1000∈ℕ" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_W1RhkYuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_ROL9QIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_W1RhkYuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#lastPayment\/inv1,7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="lastPayment/inv1,10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="currentMonth+1=0⇒bankAccount+1000=0" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_r7nCIIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_ROL9QIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_r7nCIIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#lastPayment\/inv1,10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="lastPayment/inv1,11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="currentMonth+1≠0∧currentMonth+1&lt;24⇒bankAccount+1000=(currentMonth+1)∗rate" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8IuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_ROL9QIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8IuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#lastPayment\/inv1,11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="lastPayment/inv1,12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTALLHYPbondContractCu)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="currentMonth+1=25⇒bankAccount+1000=(currentMonth+1 − 1)∗rate+1000" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8YuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_ROL9QIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8YuYEemXDtEIgydsYA"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poSequent#lastPayment\/inv1,12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTbondContractCu)" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="60">
+<org.eventb.core.poIdentifier name="currentMonth'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="bankAccount'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPbondContractCu)" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#EVTIDENTbondContractCu)" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="currentMonth=24" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.event#_ROL9QIuXEemXDtEIgydsYA|org.eventb.core.guard#_kGsBMIt_EemnhtSGBral9w"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/smart-contracts/bondContract.bpo|org.eventb.core.poFile#bondContract|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="60">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="currentMonth∈0 ‥ time+2" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_kNJ88ot8EemnhtSGBral9w"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="rateSchedule∈0 ‥ time → ℕ" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_CbUydYuCEemnhtSGBral9w"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="bankAccount∈ℕ" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_W1RhkYuXEemXDtEIgydsYA"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="currentMonth=0⇒bankAccount=0" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_r7nCIIuXEemXDtEIgydsYA"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="currentMonth≠0∧currentMonth&lt;24⇒bankAccount=currentMonth∗rate" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8IuYEemXDtEIgydsYA"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="currentMonth=25⇒bankAccount=(currentMonth − 1)∗rate+1000" org.eventb.core.source="/smart-contracts/bondContract.bum|org.eventb.core.machineFile#bondContract|org.eventb.core.invariant#_MCLV8YuYEemXDtEIgydsYA"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

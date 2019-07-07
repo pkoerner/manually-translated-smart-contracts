@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1560182355907" org.eventb.texttools.text_representation="context bondContractCtx&#10;&#10;constants&#10;time&#10;rate&#10;&#10;axioms&#10;@axm1.1 time = 23&#10;@axm1.2 rate = 500&#10;end&#10;" version="3">
+<org.eventb.core.constant name="_ki4roIuYEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.identifier="time"/>
+<org.eventb.core.axiom name="_ki4roYuYEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.label="axm1,1" org.eventb.core.predicate="time = 23"/>
+<org.eventb.core.constant name="_speYQIuYEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.identifier="rate"/>
+<org.eventb.core.axiom name="_spe_UIuYEemXDtEIgydsYA" org.eventb.core.generated="false" org.eventb.core.label="axm1,2" org.eventb.core.predicate="rate = 500"/>
+</org.eventb.core.contextFile>

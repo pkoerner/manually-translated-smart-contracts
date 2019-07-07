@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="goods" org.eventb.core.type="ℙ(goods)"/>
+<org.eventb.core.poIdentifier name="money" org.eventb.core.type="goods"/>
+<org.eventb.core.poIdentifier name="porkbellys" org.eventb.core.type="goods"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/smart-contracts/futureContractCtx.bpo|org.eventb.core.poFile#futureContractCtx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(goods,{money},{porkbellys})" org.eventb.core.source="/smart-contracts/futureContractCtx.buc|org.eventb.core.contextFile#futureContractCtx|org.eventb.core.axiom#_irmPQIxbEemMrvaUgNKbYw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
